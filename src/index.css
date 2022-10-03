@@ -1,5 +1,5 @@
 * {
-  font-family: "Poppins";
+  font-family: "Poppins", "Courier New", Courier, monospace;
   box-sizing: border-box;
 }
 
@@ -17,4 +17,37 @@ body {
 
 .main-logo {
   max-width: 100px;
+}
+
+.hero-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  padding: 20px 36px;
+}
+
+.hero-text {
+  line-height: 18px;
+  width: 320px;
+  height: 56px;
+  margin-top: 0;
+}
+
+.hero-header {
+  margin-bottom: 16px;
+}
+
+.card {
+  padding: 20px 36px;
+}
+
+.card-stats > p {
+  margin: 10px 0;
+}
+
+.card-price > span {
+  font-weight: bold;
 }
