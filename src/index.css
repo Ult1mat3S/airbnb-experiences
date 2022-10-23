@@ -44,10 +44,23 @@ body {
   padding: 20px 36px;
 }
 
+.card-stats {
+  /* display: flex; */
+  /* align-items: center; */
+}
+
 .card-stats > p {
   margin: 10px 0;
 }
 
-.card-price > span {
+.bold {
   font-weight: bold;
+}
+
+.gray {
+  color: #918e9b;
+}
+
+.card-star {
+  height: 14px;
 }
