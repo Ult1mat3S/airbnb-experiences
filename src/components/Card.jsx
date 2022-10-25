@@ -1,4 +1,3 @@
-import katieZaferes from "./../assets/katieZaferes.svg";
 import star from "./../assets/star1.svg";
 
 export default function Card(props) {
