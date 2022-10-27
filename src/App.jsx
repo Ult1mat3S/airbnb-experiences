@@ -11,8 +11,9 @@ function App() {
       <Card
         img={katieZaferes}
         rating="5.0"
+        reviewsAmount="6"
         location="USA"
-        name="Katie Zaferes"
+        title="Life lessons with Katie Zaferes"
         price="136"
       />
       <Card />
