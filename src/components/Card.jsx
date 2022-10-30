@@ -8,12 +8,22 @@ export default function Card({
   location,
   title,
   price,
+  openSpots,
 }) {
+  console.log(location);
+  let badgeText = "";
+  if (openSpots === 0) {
+    badgeText = "SOLD OUT";
+  } else if (location === "Online") {
+    badgeText = "ONLINE";
+  }
+
   return (
     <>
       {
         <section className="card">
           <img src={img} alt={alt} className="card-photo" />
+          {openSpots === 0 && <div className="card-badge">{badgeText}</div>}
           <div className="card-stats">
             <img
               src={star}
