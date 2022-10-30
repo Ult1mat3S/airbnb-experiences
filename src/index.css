@@ -40,10 +40,6 @@ body {
   margin-bottom: 16px;
 }
 
-.section {
-  padding: 20px 36px;
-}
-
 .bold {
   font-weight: bold;
 }
@@ -69,6 +65,7 @@ body {
   flex-wrap: nowrap;
   gap: 20px;
   overflow-x: auto;
+  padding: 20px 36px;
 }
 
 .card-photo {
