@@ -40,12 +40,8 @@ body {
   margin-bottom: 16px;
 }
 
-.card {
+.section {
   padding: 20px 36px;
-}
-
-.card-stats > p {
-  margin: 10px 0;
 }
 
 .bold {
@@ -56,6 +52,40 @@ body {
   color: #918e9b;
 }
 
+.card-stats > p {
+  margin: 10px 0;
+}
+
+.card {
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.card-photo {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
 .card-star {
   height: 14px;
+}
+
+.card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-price {
+  margin-top: auto;
 }
