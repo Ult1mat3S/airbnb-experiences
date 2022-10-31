@@ -1,6 +1,6 @@
-import katieZaferes from "./assets/images/katiezaferes.png";
-import weddingPhotography from "./assets/images/weddingphotography.png";
-import mountainBike from "./assets/images/mountainbike.png";
+import katieZaferes from "./assets/images/katieZaferes.png";
+import weddingPhotography from "./assets/images/weddingPhotography.png";
+import mountainBike from "./assets/images/mountainBike.png";
 
 export default [
   {

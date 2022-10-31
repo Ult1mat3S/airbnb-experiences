@@ -1,4 +1,4 @@
-import photo from "./../assets/images/photogrid.png";
+import photo from "./../assets/images/photoGrid.png";
 
 export default function Hero() {
   return (
