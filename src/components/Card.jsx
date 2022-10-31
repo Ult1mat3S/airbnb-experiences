@@ -10,7 +10,6 @@ export default function Card({
   price,
   openSpots,
 }) {
-  console.log(location);
   let badgeText = "";
   if (openSpots === 0) {
     badgeText = "SOLD OUT";
