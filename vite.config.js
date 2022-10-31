@@ -9,7 +9,10 @@ export default defineConfig({
     open: true,
   },
   plugins: [react(), svgrPlugin()],
+
   build: {
+    emptyOutDir: true,
+    outDir: "./dist",
     rollupOptions: {
       output: {
         entryFileNames: `[name]` + hash + `.js`,
