@@ -9,11 +9,12 @@ export default function Card({
   title,
   price,
   openSpots,
+  item,
 }) {
   let badgeText = "";
-  if (openSpots === 0) {
+  if (item.openSpots === 0) {
     badgeText = "SOLD OUT";
-  } else if (location === "Online") {
+  } else if (item.location === "Online") {
     badgeText = "ONLINE";
   }
 
@@ -21,21 +22,21 @@ export default function Card({
     <>
       {
         <section className="card">
-          <img src={img} alt={alt} className="card-photo" />
-          {openSpots === 0 && <div className="card-badge">{badgeText}</div>}
+          <img src={item.coverImg} alt={item.alt} className="card-photo" />
+          {badgeText && <div className="card-badge">{badgeText}</div>}
           <div className="card-stats">
             <img
               src={star}
               alt="Hot pink coloured star"
               className="card-star"
             />
-            <span>{rating}</span>
-            <span className="gray"> ({reviewCount}) • </span>
-            <span className="gray">{location}</span>
+            <span>{item.stats.rating}</span>
+            <span className="gray"> ({item.stats.reviewCount}) • </span>
+            <span className="gray">{item.location}</span>
           </div>
-          <p className="card-title">{title}</p>
+          <p className="card-title">{item.title}</p>
           <p className="card-price">
-            <span className="bold">From ${price}</span> / person
+            <span className="bold">From ${item.price}</span> / person
           </p>
         </section>
       }
